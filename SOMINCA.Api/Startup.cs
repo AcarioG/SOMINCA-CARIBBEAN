@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SOMINCA.Domain.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
@@ -33,7 +35,7 @@ namespace SOMINCA.Api
                         .ReferenceHandler = ReferenceHandler.Preserve);
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("Brotherhood"), b => b.MigrationsAssembly("Brotherhood.API"));
+                options.UseSqlServer(Configuration.GetConnectionString("SOMINCA_DB"), b => b.MigrationsAssembly("SOMINCA.Api"));
             });
             services.AddCors(options =>
             {

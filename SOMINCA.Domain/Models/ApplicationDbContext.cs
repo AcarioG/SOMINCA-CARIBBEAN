@@ -13,7 +13,14 @@ namespace SOMINCA.Domain.Models
 
         }
 
+        public DbSet<Vehiculo> Vehiculo { get; set; }
+        public DbSet<Reserva> Reservas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
-
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies(useLazyLoadingProxies: true);
+            base.OnConfiguring(optionsBuilder);
+        }
     }
 }
