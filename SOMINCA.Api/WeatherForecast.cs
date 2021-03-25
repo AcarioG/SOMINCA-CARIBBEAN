@@ -1,6 +1,6 @@
 using System;
 
-namespace SOMINCA.Api
+namespace SOMINCA.API
 {
     public class WeatherForecast
     {

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMINCA.Api", "SOMINCA.Api\SOMINCA.Api.csproj", "{56923141-18BC-4109-8AF7-83EB0D5A7632}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMINCA.Domain", "SOMINCA.Domain\SOMINCA.Domain.csproj", "{423AB6CF-220A-4304-9A39-42D79F3ECB9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMINCA.Repository", "SOMINCA.Repository\SOMINCA.Repository.csproj", "{52995D6B-8247-4E15-9D43-1EEEDDFE32A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMINCA.Services", "SOMINCA.Services\SOMINCA.Services.csproj", "{C8FE5C5A-4808-4F3E-B285-4AE114DB42C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMINCA.API", "SOMINCA.API\SOMINCA.API.csproj", "{02B6B345-ACBB-4B82-AFF6-DF5A5540346D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{56923141-18BC-4109-8AF7-83EB0D5A7632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56923141-18BC-4109-8AF7-83EB0D5A7632}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56923141-18BC-4109-8AF7-83EB0D5A7632}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56923141-18BC-4109-8AF7-83EB0D5A7632}.Release|Any CPU.Build.0 = Release|Any CPU
 		{423AB6CF-220A-4304-9A39-42D79F3ECB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{423AB6CF-220A-4304-9A39-42D79F3ECB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{423AB6CF-220A-4304-9A39-42D79F3ECB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{C8FE5C5A-4808-4F3E-B285-4AE114DB42C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8FE5C5A-4808-4F3E-B285-4AE114DB42C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8FE5C5A-4808-4F3E-B285-4AE114DB42C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B6B345-ACBB-4B82-AFF6-DF5A5540346D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B6B345-ACBB-4B82-AFF6-DF5A5540346D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B6B345-ACBB-4B82-AFF6-DF5A5540346D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B6B345-ACBB-4B82-AFF6-DF5A5540346D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

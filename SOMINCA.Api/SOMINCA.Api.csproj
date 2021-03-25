@@ -15,11 +15,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SOMINCA.Domain\SOMINCA.Domain.csproj" />
+    <ProjectReference Include="..\SOMINCA.Repository\SOMINCA.Repository.csproj" />
     <ProjectReference Include="..\SOMINCA.Services\SOMINCA.Services.csproj" />
   </ItemGroup>
 

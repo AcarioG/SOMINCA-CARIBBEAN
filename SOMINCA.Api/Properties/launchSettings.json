@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:50090",
+      "applicationUrl": "http://localhost:53333",
       "sslPort": 0
     }
   },
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "SOMINCA.Api": {
+    "SOMINCA.API": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
