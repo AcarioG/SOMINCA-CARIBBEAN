@@ -9,6 +9,6 @@ namespace SOMINCA.Domain.Models
         public int Id { get; set; }
         public DateTime Reservacion { get; set; }
         public DateTime Entrega { get; set; }
-        public Usuario Usuario { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

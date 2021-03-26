@@ -11,7 +11,7 @@ namespace SOMINCA.Domain.Models
         public string Apellido { get; set; }
         public string Correo { get; set; }
         public string Telefono { get; set; }
-        public Vehiculo Vehiculos { get; set; }
+        public virtual Vehiculo Vehiculos { get; set; }
         public virtual ICollection<Reserva> Reservas { get; set; }
     }
 }
