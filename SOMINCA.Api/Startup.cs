@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +13,7 @@ using SOMINCA.Repository.Interfaces;
 using SOMINCA.Repository.Repositories;
 using SOMINCA.Services.Interfaces;
 using SOMINCA.Services.Services;
+using Newtonsoft.Json;
 using SOMINCA.Services.UnitOfWork;
 using System;
 using System.Collections.Generic;
@@ -42,6 +44,11 @@ namespace SOMINCA.API
             {
                 options.UseSqlServer(Configuration.GetConnectionString("SOMINCA_DB"), b => b.MigrationsAssembly("SOMINCA.API"));
             });
+
+            services.AddIdentity<Usuario, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy", policy =>
@@ -55,6 +62,8 @@ namespace SOMINCA.API
             {
                 setup.SwaggerDoc("v1", new OpenApiInfo() { Title = "Documentation", Version = "v1" });
             });
+
+            //services.AddMvc().AddJsonOptions(ConfigureJson);
 
             services.AddTransient<IReservaRepository, ReservaRepository>();
             services.AddTransient<IUnitOfWorkRepository, UnitOfWorkRepository>();
