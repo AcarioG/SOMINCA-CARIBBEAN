@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SOMINCA.Domain.Models
+namespace SOMINCA.Domain.DTO
 {
-    public partial class Reserva
+    public partial class ReservaDTO
     {
         public int Id { get; set; }
         public DateTime Reservacion { get; set; }
         public DateTime Entrega { get; set; }
-        public Usuario Usuario { get; set; }
+        public UsuarioDTO Usuario { get; set; }
     }
 }

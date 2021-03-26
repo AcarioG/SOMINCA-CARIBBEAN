@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SOMINCA.Domain.Models
 {
-    class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

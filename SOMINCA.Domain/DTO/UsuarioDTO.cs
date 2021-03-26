@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SOMINCA.Domain.Models
+namespace SOMINCA.Domain.DTO
 {
-    public partial class Usuario
+    public class UsuarioDTO
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Correo { get; set; }
         public string Telefono { get; set; }
-        public Vehiculo Vehiculos { get; set; }
-        public virtual ICollection<Reserva> Reservas { get; set; }
+        public VehiculoDTO Vehiculos { get; set; }
+        public virtual ICollection<ReservaDTO> Reservas { get; set; }
     }
 }
