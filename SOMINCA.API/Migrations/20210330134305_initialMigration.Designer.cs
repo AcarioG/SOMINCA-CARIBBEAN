@@ -10,8 +10,8 @@ using SOMINCA.Domain.Models;
 namespace SOMINCA.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210326195948_Added_user_system")]
-    partial class Added_user_system
+    [Migration("20210330134305_initialMigration")]
+    partial class initialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
